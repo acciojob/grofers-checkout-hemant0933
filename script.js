@@ -12,6 +12,7 @@ const getSum = () => {
 const table = document.querySelector('table');
 const newRow = table.insertRow();
 const newCell = newRow.insertCell();
+	newCell = newCell.setAttribute('id',ans);
 newCell.colSpan = 2;
 newCell.innerText = `Total: ${sum.toFixed(2)}`;
 	
